@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Whale</key>
+	<dict>
+		<key>name</key>
+		<string>Whale</string>
+		<key>isMale</key>
+		<true/>
+		<key>minAge</key>
+		<integer>3</integer>
+		<key>maxAge</key>
+		<integer>8</integer>
+		<key>color</key>
+		<string>Blue</string>
+	</dict>
+	<key>Dolphin</key>
+	<dict>
+		<key>name</key>
+		<string>Dolphin</string>
+		<key>isMale</key>
+		<false/>
+		<key>minAge</key>
+		<integer>15</integer>
+		<key>maxAge</key>
+		<integer>23</integer>
+		<key>color</key>
+		<string>Blue</string>
+	</dict>
+</dict>
+</plist>

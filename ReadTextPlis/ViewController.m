@@ -17,6 +17,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSMutableArray *mutableArray =[[NSMutableArray alloc] init];
+    
+    NSDictionary *mainDictionary = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"animals" ofType:@"plist"]];
+    
+    
+    
+    NSLog(@"%@",mainDictionary);
+    
+    
+    //---enumerate through the dictionary objects
+    NSEnumerator *enumerator = [mainDictionary objectEnumerator];
+    id value;
+    
+    while ((value = [enumerator nextObject])) {
+        NSLog(@"%@",value);
+        
+        if ([[value valueForKey:@"minAge"] isEqualToNumber:[NSNumber numberWithInt:3]])
+        {
+            
+            [mutableArray addObject:[value valueForKey:@"name"]];
+        }
+        
+        
+    }
+    
+    NSLog(@"%@",mutableArray);
+    
+    
+    
 }
 
 
